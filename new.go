@@ -19,4 +19,13 @@
 
 package tester
 
-const PackageVersion = "1.0"
+import (
+	"testing"
+)
+
+// Creates a new Test Object.
+func New(
+	t *testing.T,
+) *Test {
+	return &Test{t: t}
+}

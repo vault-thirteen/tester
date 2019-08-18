@@ -19,4 +19,18 @@
 
 package tester
 
-const PackageVersion = "1.0"
+import (
+	"testing"
+)
+
+func Test_NewTest(t *testing.T) {
+
+	var aTestingT *testing.T
+	var result *Test
+
+	aTestingT = new(testing.T)
+	result = New(aTestingT)
+	if result.t != aTestingT {
+		t.FailNow()
+	}
+}

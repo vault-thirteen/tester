@@ -19,4 +19,14 @@
 
 package tester
 
-const PackageVersion = "1.0"
+// Tester.
+
+// This Package provides various useful Functions which help in writing Tests.
+
+import (
+	"testing"
+)
+
+type Test struct {
+	t *testing.T
+}

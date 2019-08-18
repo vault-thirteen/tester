@@ -1,4 +1,29 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// Copyright © 2019 by Vault Thirteen.
+//
+// All rights reserved. No part of this publication may be reproduced,
+// distributed, or transmitted in any form or by any means, including
+// photocopying, recording, or other electronic or mechanical methods,
+// without the prior written permission of the publisher, except in the case
+// of brief quotations embodied in critical reviews and certain other
+// noncommercial uses permitted by copyright law. For permission requests,
+// write to the publisher, addressed “Copyright Protected Material” at the
+// address below.
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+// Web Site Address:	https://github.com/vault-thirteen.
+//
+////////////////////////////////////////////////////////////////////////////////
+
 package tester
+
+// Assertion Methods help in comparing Values and checking Errors.
+
+// This Package provides a convenient Way to control Mismatches.
+// When the Comparison fails, it shows not only the two Values which failed,
+// but also a 'Diff' (Difference) between them.
 
 import (
 	"fmt"
@@ -6,12 +31,6 @@ import (
 
 	"github.com/kr/pretty"
 )
-
-// Assertion Methods help in comparing Values and checking Errors.
-
-// This Package provides a convenient Way to control Mismatches.
-// When the Comparison fails, it shows not only the two Values which failed,
-// but also a 'Diff' (Difference) between them.
 
 // Error Messages.
 const (
