@@ -46,19 +46,29 @@ B=%v
 Diff=%v`
 )
 
-func errorIsSet(err error) bool {
+func errorIsSet(
+	err error,
+) bool {
 	return err != nil
 }
 
-func errorIsEmpty(err error) bool {
+func errorIsEmpty(
+	err error,
+) bool {
 	return err == nil
 }
 
-func interfacesAreEqual(a interface{}, b interface{}) bool {
+func interfacesAreEqual(
+	a interface{},
+	b interface{},
+) bool {
 	return reflect.DeepEqual(a, b)
 }
 
-func interfacesAreDifferent(a interface{}, b interface{}) bool {
+func interfacesAreDifferent(
+	a interface{},
+	b interface{},
+) bool {
 	return !reflect.DeepEqual(a, b)
 }
 
