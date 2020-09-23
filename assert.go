@@ -1,6 +1,8 @@
+// assert.go.
+
 ////////////////////////////////////////////////////////////////////////////////
 //
-// Copyright © 2019 by Vault Thirteen.
+// Copyright © 2019..2020 by Vault Thirteen.
 //
 // All rights reserved. No part of this publication may be reproduced,
 // distributed, or transmitted in any form or by any means, including
@@ -17,13 +19,13 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-package tester
-
 // Assertion Methods help in comparing Values and checking Errors.
 
 // This Package provides a convenient Way to control Mismatches.
 // When the Comparison fails, it shows not only the two Values which failed,
 // but also a 'Diff' (Difference) between them.
+
+package tester
 
 import (
 	"fmt"

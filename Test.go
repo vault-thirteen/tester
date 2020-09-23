@@ -1,6 +1,8 @@
+// Test.go.
+
 ////////////////////////////////////////////////////////////////////////////////
 //
-// Copyright © 2019 by Vault Thirteen.
+// Copyright © 2019..2020 by Vault Thirteen.
 //
 // All rights reserved. No part of this publication may be reproduced,
 // distributed, or transmitted in any form or by any means, including
@@ -17,11 +19,9 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
+// A 'Test' Class.
+
 package tester
-
-// Tester.
-
-// This Package provides various useful Functions which help in writing Tests.
 
 import (
 	"testing"
@@ -29,4 +29,11 @@ import (
 
 type Test struct {
 	t *testing.T
+}
+
+// Creates a new Test Object.
+func New(
+	t *testing.T,
+) *Test {
+	return &Test{t: t}
 }
