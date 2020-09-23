@@ -1,6 +1,8 @@
+// Test_test.go.
+
 ////////////////////////////////////////////////////////////////////////////////
 //
-// Copyright © 2019 by Vault Thirteen.
+// Copyright © 2019..2020 by Vault Thirteen.
 //
 // All rights reserved. No part of this publication may be reproduced,
 // distributed, or transmitted in any form or by any means, including
@@ -23,9 +25,14 @@ import (
 	"testing"
 )
 
-// Creates a new Test Object.
-func New(
-	t *testing.T,
-) *Test {
-	return &Test{t: t}
+func Test_New(t *testing.T) {
+
+	var aTestingT *testing.T
+	var result *Test
+
+	aTestingT = new(testing.T)
+	result = New(aTestingT)
+	if result.t != aTestingT {
+		t.FailNow()
+	}
 }
